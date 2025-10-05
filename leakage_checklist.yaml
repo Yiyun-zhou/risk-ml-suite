@@ -1,0 +1,25 @@
+global_blocklist:
+  - "Class"
+  - "is_fraud"
+  - "label"
+  - "default"
+  - "loan_status"
+  - "recoveries"
+  - "collection_recovery_fee"
+  - "last_pymnt_d"
+  - "last_pymnt_amnt"
+  - "settlement_*"
+  - "writeoff_*"
+  - "recovery_*"
+  - "customer_ssn"
+  - "card_number"
+  - "full_name"
+dataset_overrides:
+  kaggle_creditcard:
+    drop: []
+  home_credit:
+    drop: ["TARGET"]
+  gmsc:
+    drop: ["SeriousDlqin2yrs"]
+  lending_club:
+    drop: ["loan_status"]

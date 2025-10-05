@@ -1,0 +1,21 @@
+defaults:
+  target: "Class"
+  time_col: "event_time"
+  id_col: "tx_id"
+  positive_label: 1
+  negative_label: 0
+task: "fraud"
+costs:
+  false_negative: 1000.0
+  false_positive: 5.0
+  true_positive: 0.0
+  true_negative: 0.0
+split:
+  method: "time"
+  test_days: 7
+  valid_days: 7
+drift:
+  psi_warn: 0.1
+  psi_alert: 0.25
+calibration:
+  method: "isotonic"

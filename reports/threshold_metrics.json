@@ -1,0 +1,14 @@
+{
+  "best_model": "lr",
+  "threshold": 0.9,
+  "expected_cost_valid": 9220.0,
+  "test_precision": 0.02631578947368421,
+  "test_recall": 0.125,
+  "test_f1": 0.043478260869565216,
+  "test_confusion_matrix": [
+    2379,
+    37,
+    7,
+    1
+  ]
+}
